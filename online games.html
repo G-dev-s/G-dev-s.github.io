@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <meta charset='utf-8'>
+<meta name="viewport" content="width=device-widith, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+<title>
+ online Games
+</title>
 </head>
 <body>
- No content available   
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/Logo.png"alt="image not found" > </a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="app.html">Apps</a></li>
+                    <li><a href="online games.html">Online games</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         </section> 
+          <!-------javascript for togle menu------->
+ <script>
+
+    var navlinks =document.getElementById("navlinks")
+
+    function showMenu(){
+       navlinks.style.right ="0";
+    }
+    function hideMenu(){
+       navlinks.style.right ="-300px";    
+    }
+ </script>
+ 
+</body>
+</html>
+  
 </body>
 </html>
